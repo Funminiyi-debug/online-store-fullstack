@@ -41,11 +41,14 @@ const AppBar2 = ({
           <Nav.Link onClick={handleViewCart}>
             <ShoppingCartIcon /> Cart <Badge variant="light">{noOfItems}</Badge>
           </Nav.Link>
-          {/* <Nav.Link> */}
-          <Link to="/addProduct" style={{ color: "#ddd" }}>
-            Add Product
-          </Link>
-          {/* </Nav.Link> */}
+          <Nav.Link>
+            <Link
+              to="/addProduct"
+              // style={{ color: "#ddd" }}
+            >
+              Add Product
+            </Link>
+          </Nav.Link>
           <NavDropdown title="Categories" id="collasible-nav-dropdown">
             {data.map(category => {
               return (

@@ -205,6 +205,7 @@ function App() {
             <div
               style={{
                 width: "90%",
+                margin: "0 auto",
               }}
               id="panel"
               ref={panelRef}
