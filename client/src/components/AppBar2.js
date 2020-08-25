@@ -65,7 +65,7 @@ const AppBar2 = ({
             />
           </Form>
           {!userLoggedIn ? (
-            <Nav.Link href="http://localhost:2200/auth/google">Login</Nav.Link>
+            <Nav.Link href="/auth/google">Login</Nav.Link>
           ) : (
             <Nav.Link onClick={logout}>Logout </Nav.Link>
           )}

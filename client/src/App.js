@@ -33,7 +33,7 @@ function App() {
   const [userLoggedIn, setuserLoggedIn] = useState(false);
   const logout = async () => {
     try {
-      await axios.get(api + "/auth/logout");
+      await axios.get("/auth/logout");
       setuserLoggedIn(false);
       window.localStorage.removeItem("jwt");
       window.localStorage.removeItem("cartItems");
@@ -46,7 +46,7 @@ function App() {
 
   const getProducts = async () => {
     try {
-      const response = await axios.get(api + "/resources/products");
+      const response = await axios.get("/resources/products");
       setproducts(response.data.product);
       setloading(false);
       // console.log(response.data.product);
@@ -57,7 +57,7 @@ function App() {
 
   const getCartItems = async () => {
     try {
-      const res = await axios.post(api + "/resources/user/getcartitems", {
+      const res = await axios.post("/resources/user/getcartitems", {
         token: localStorage.getItem("jwt"),
       });
       const stringCartItems = localStorage.getItem("cartItems");
@@ -158,13 +158,13 @@ function App() {
     return (
       <>
         {/* <p>loading</p> */}
-        <div className="container" style={{ margin: "0 auto" }}>
+        <div style={{ margin: "0 auto" }}>
           <Typography variant="h6" className="text-center">
             Loading...
           </Typography>
-          <Skeleton variant="text" width={"90vw"} />
+          <Skeleton variant="text" width={"80vw"} />
           <Skeleton variant="circle" width={60} height={60} />
-          <Skeleton variant="rect" width={"90vw"} height={500} />
+          <Skeleton variant="rect" width={"80vw"} height={500} />
         </div>
       </>
     );
@@ -204,7 +204,7 @@ function App() {
           <Route path="/">
             <div
               style={{
-                width: "100vw",
+                width: "90%",
               }}
               id="panel"
               ref={panelRef}

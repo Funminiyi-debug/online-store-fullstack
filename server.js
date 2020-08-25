@@ -34,9 +34,6 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.get("/", (req, res) => {
-  res.json({ msg: "hello 2200" });
-});
 app.use("/auth", require("./routes/auth"));
 app.use("/resources/user", require("./routes/user"));
 app.use("/resources/products", require("./routes/products"));

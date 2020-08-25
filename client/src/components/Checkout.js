@@ -64,7 +64,7 @@ export default function HorizontalLabelPositionBelowStepper({
   };
   const getUserDetails = async () => {
     try {
-      const response = await axios.post(api + "/resources/user", {
+      const response = await axios.post("/resources/user", {
         token: window.localStorage.getItem("jwt"),
       });
       setUserDetails(response.data);
