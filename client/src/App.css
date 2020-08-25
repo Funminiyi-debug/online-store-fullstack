@@ -1,0 +1,55 @@
+:root {
+  --primaryColor: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  --secondaryColor: radial-gradient(circle, rgba(174, 180, 238, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+body {
+  /* margin-right: -40px;
+  margin-left: -10px; */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.address-verification button {
+  background: rgb(72, 85, 156);
+  border: none;
+}
+
+.address-verification button:hover {
+  opacity: .8;
+  background: rgb(72, 85, 156);
+}
+
+/* end of panel design */
+
+.delete-icon:hover {
+  opacity: .5;
+}
+
+.float-right {
+  float: "right"
+}
+
+.float-left {
+  float: "left"
+}
+
+.paper {
+  height: 10rem;
+}
+
+a {
+  color: inherit
+}
+
+a:hover {
+  opacity: .5;
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 667px) {
+  .table {
+    font-size: .8rem;
+  }
+}

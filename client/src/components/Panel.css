@@ -1,0 +1,22 @@
+.panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+@media screen and (max-width: 667px) {
+    .panel {
+        grid-template-columns: repeat(2, 1fr);
+        /* height: min-content; */
+    }
+    .panel *, .panel button, .panel p {
+        font-size: .8rem;
+        padding: .1rem;
+    }
+    .panel span {
+        font-size: .7rem;
+    }
+    h6.panel-header {
+        font-size: 1rem;
+        padding: 0
+    }
+}

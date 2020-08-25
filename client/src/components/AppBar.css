@@ -1,0 +1,31 @@
+.navbar-2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+  /* color:  */
+}
+
+.accordion {
+  width: 100%;
+  background: rgba(128, 128, 133, 0.3) !important;
+}
+
+.accordion-details {
+  /* background: rgba(128, 128, 133, 0.3) */
+}
+
+.accordion-details:hover {
+  background: rgba(128, 128, 133, 0.6)
+}
+
+.form {
+  float: right;
+}
+
+.navbar-mobile {
+  font-size: .8rem;
+}
+
+.navbar-brand-mobile {
+  font-size: 1rem;
+}

@@ -1,0 +1,36 @@
+POST http://localhost:2200/resources/user
+Content-Type: application/json
+
+{
+    "token": "sample string"
+}
+
+####
+GET http://localhost:2200/resources/products
+
+###
+POST http://localhost:2200/resources/products
+Content-Type: application/json
+
+{
+    "name": "Sample Product updated",
+    "price": 2000,
+    "image": "nivea lotion.jpg",
+    "category": "Toiletries",
+    "subcategory": "Moisturizers & Lotions 1"
+}
+
+###
+GET http://localhost:2200/resources/products/
+
+###
+POST http://localhost:2200/resources/products/5f417a366b09da18b0b808cd
+Content-Type: application/json
+
+# {
+#     "name": "Sample Product updated",
+#     "price": 2000,
+#     "image": "nivea lotion.jpg",
+#     "category": "Toiletries",
+#     "subcategory": "Moisturizers & Lotions 1"
+# }
